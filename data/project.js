@@ -69,10 +69,10 @@ const PROJECTS = [
   {
     id: 7,
     name: 'Nittykumpu Shopping Center',
-    img: 'https://via.placeholder.com/150',
+    img: '/../projects/niittykumpu/img/cover.png',
     desc: 'Project of the User-Centered Methods Course in Aalto.',
     extdesc: '',
-    btnUrl: '../projects/nittykumpu/index.html',
+    btnUrl: '../projects/niittykumpu/index.html',
     tags: ['university'],
   },
   {
