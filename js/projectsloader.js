@@ -20,11 +20,11 @@ const projectCard = data => {
           alt=${data.name}
         />
         <div class="card-body">
-          <h5 class="card-title">${data.name}<br />${badges}</h5>
+          <h5 class="card-title">${data.name} (${data.date})<br />${badges}</h5>
           <p class="card-text">
             ${data.desc}
           </p>
-          <a href="${data.btnUrl}" class="btn btn-primary">Details</a>
+          <button href="${data.btnUrl}" class="btn btn-primary" name="btn-details">Details</button>
         </div>
       </div>
     </div>`;
@@ -100,4 +100,13 @@ function setAllFilter(filters) {
     }
     updateFiltersView(filtersElem, filters);
   });
+  const btns = $('button[name="btn-details"]');
+  for (let btn of btns) {
+    const href = btn.attributes.href.value;
+    if (href === '#') {
+      btn.setAttribute('disabled', 'true')
+    } else {
+      btn.removeAttribute('disabled')
+    }
+  }
 })(jQuery);
