@@ -5,6 +5,7 @@
  * name :string,
  * img :string,
  * desc :string - description for the card
+ * date: date (full year)
  * extdesc :string - extended description for the project page (might contain html tags)
  * date :string
  * tags :array - available labels: personal, professional, university, wip. Multiple lables may be present (alphabetically ordered)
@@ -16,8 +17,9 @@ const PROJECTS = [
     name: 'Portfolio',
     img: '../projects/portfolio/img/cover.png',
     desc: 'Website for my Résumé and Portfolio; built with JS, jQuery and Bootstrap.',
+    date: 2019,
     extdesc: '',
-    btnUrl: '../projects/portfolio/index.html',
+    btnUrl: '#',
     tags: ['personal', 'wip'],
   },
   {
@@ -25,8 +27,9 @@ const PROJECTS = [
     name: 'Hearthstone Deck Builder',
     img: '../projects/hearthstone/img/cover.png',
     desc: 'Small project to train on ReactJS, APIs, and Material Design Bootstrap.',
+    date: 2019,
     extdesc: '',
-    btnUrl: '../projects/hearthstone/index.html',
+    btnUrl: '#',
     tags: ['personal', 'wip'],
   },
   {
@@ -35,6 +38,7 @@ const PROJECTS = [
     img: '../projects/posti/img/cover.png',
     desc:
       'An exciting day with fun activities related to Posti and their services.',
+    date: 2019,
     extdesc: '',
     btnUrl: '../projects/posti/index.html',
     tags: ['professional', 'university'],
@@ -44,8 +48,9 @@ const PROJECTS = [
     name: 'Elisa Viihde',
     img: '../projects/elisaviihde/img/cover.png',
     desc: 'Usability Evaluation of ElisaViihde, Elisa\'s streaming platform.',
+    date: 2019,
     extdesc: '',
-    btnUrl: '../projects/elisaviihde/index.html',
+    btnUrl: '#',
     tags: ['professional', 'university'],
   },
   {
@@ -53,8 +58,9 @@ const PROJECTS = [
     name: 'Heimdall',
     img: '../projects/heimdall/img/cover.png',
     desc: 'Startup idea developed for the Startup Experience Course in Aalto.',
+    date: 2019,
     extdesc: '',
-    btnUrl: '../projects/heimdall/index.html',
+    btnUrl: '#',
     tags: ['university'],
   },
   {
@@ -62,8 +68,9 @@ const PROJECTS = [
     name: 'Namibia ID Application',
     img: '../projects/namibia-id/img/cover.png',
     desc: 'An application developed for the UIC Course in Aalto.',
+    date: 2018,
     extdesc: '',
-    btnUrl: '../projects/namibia-id/index.html',
+    btnUrl: '#',
     tags: ['university'],
   },
   {
@@ -71,8 +78,9 @@ const PROJECTS = [
     name: 'Nittykumpu Shopping Center',
     img: '/../projects/niittykumpu/img/cover.png',
     desc: 'Project of the User-Centered Methods Course in Aalto.',
+    date: 2018,
     extdesc: '',
-    btnUrl: '../projects/niittykumpu/index.html',
+    btnUrl: '#',
     tags: ['university'],
   },
   {
@@ -80,7 +88,9 @@ const PROJECTS = [
     name: 'WinAnt',
     img: '../projects/winant/img/cover.png',
     desc: 'Cross-platform application developed at MonkeyCube S.R.L.',
+    date: 2018,
     extdesc: '',
+    btnUrl: '#',
     tags: ['professional'],
   },
   {
@@ -88,7 +98,9 @@ const PROJECTS = [
     name: 'Auth0 Users',
     img: '../projects/auth0/img/cover.png',
     desc: 'NPM Package to retrieve users\'id using Auth0 APIs.',
+    date: 2017,
     extdesc: '',
+    btnUrl: '#',
     tags: ['personal'],
   },
   {
@@ -96,7 +108,9 @@ const PROJECTS = [
     name: 'HomebrewLab',
     img: '../projects/homebrewlab/img/cover.gif',
     desc: 'Free web-app for pro and amateur homebrewers.',
+    date: 2017,
     extdesc: '',
+    btnUrl: '#',
     tags: ['personal', 'university'],
   },
 ];
