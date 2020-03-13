@@ -24,7 +24,9 @@ const projectCard = data => {
           <p class="card-text">
             ${data.desc}
           </p>
-          <button href="${data.btnUrl}" class="btn btn-primary" name="btn-details">Details</button>
+          <button onclick="location.href='${data.btnUrl}';" href="${data.btnUrl}" class="btn btn-primary" name="btn-details">
+            Details
+          </button>
         </div>
       </div>
     </div>`;
@@ -100,6 +102,7 @@ function setAllFilter(filters) {
     }
     updateFiltersView(filtersElem, filters);
   });
+  // Disable the buttons if the related project is not ready yet.
   const btns = $('button[name="btn-details"]');
   for (let btn of btns) {
     const href = btn.attributes.href.value;
