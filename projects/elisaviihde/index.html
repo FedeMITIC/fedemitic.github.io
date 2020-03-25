@@ -57,9 +57,6 @@
           <a class="nav-link js-scroll-trigger" href="#approach">Approach</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#techniques">Techniques</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#results">Results</a>
         </li>
         <li class="nav-item">
@@ -81,21 +78,21 @@
           Evaluation
           (<a href="https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1126047401&takaisin=etusivu.html" target="_blank"
             rel="noopener noreferrer"><i class="fas fa-link"></i></a>), we were tasked to conduct a Usability Evaluation
-          for Elisa on ElisaViihde, their video streaming platform.
-          (<a href="https://www.posti.fi/index-en.html" target="_blank" rel="noopener noreferrer"><i
-              class="fas fa-link"></i></a>) Elisa is a telecommunications, ICT and online service company and a market
+          for Elisa on ElisaViihde, their streaming and video rental platform
+          (<a href="https://elisaviihde.fi/" target="_blank" rel="noopener noreferrer"><i
+              class="fas fa-link"></i></a>). Elisa is a telecommunications, ICT and online service company and a market
           leader in Finland.
           The purpose of the Evaluation was to discover possible Usability issues that users with specific needs might
           encounter using the platform.
-          The target user group, chosen for the Evaluation, was visually impaired users but not completely blind ones.
+          The target user group, chosen for the Evaluation, was visually impaired, but not completely blind, users.
         </p>
         <h3 class="mb-2">My Roles</h3>
         <p class="lead">
-          Conduct Heuristic Evaluation, using known heuristics <br />
-          Creating visualization for one of the ideas (return label).<br />
-          Realizing a pilot event for Posti Day.<br />
-          Recording and editing the video of the pilot event to use as final prototype.<br />
-          Pitching at the final gala, to present the concept to Posti.<br />
+          Conduct an Expert Evaluation, using well known heuristics such as Nielsen's 10 general principles for interaction design (<a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-link"></i></a>) and WCAG to detect accessibility issues (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-link"></i></a>).<br />
+          Conduct an Empirical Evaluation, with a user belonging to the target group, on the platform.<br />
+          Discussing and reporting results with the teachers and the company mentor.<br />
         </p>
       </div>
     </section>
@@ -103,12 +100,9 @@
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="challenge">
       <div class="w-100">
         <h2 class="mb-5">Challenge</h2>
-        <p class="lead mb-5">The task was to create a new service/product for Posti; the concept had to be feasible from
-          a technological and economical point of view.
-          Indeed, along with a concrete concept, we also had to show its business potential.
-          We also had to take into account already existing services and products provided by Posti and integrate our
-          concept in their ecosystem; it had to respect the company's values and image, and tackle specific problems in
-          specific areas.
+        <p class="lead mb-5">The original task proposed by the company was to study their new Design System (a collection of component and styles ideated for branding the company websites and applications) and identify possible issues that users might be facing.
+          Elisa is a company operating in the telecom sector and offers services to different user groups (including old people, people with disabilities, and people with lower levels of education) thus it is important to ensure that their resources are accessible from all these categories of users.
+          For these reasons we decided to focus on visually impaired users, that are still able to enjoy a movie or a video, but might have trouble with the interface to rent/buy them.
         </p>
       </div>
     </section>
@@ -116,135 +110,137 @@
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="approach">
       <div class="w-100">
         <h2 class="mb-5">Approach</h2>
-        <p class="lead mb-5">The whole project followed the Agile framework; it was divided into 6 sprints, each of them
-          about 2 weeks long.
-          Each sprint had a different focus; the first sprints were focused around discovering the current issues that
-          Posti was facing, and proposing new ideas.
-          The sprints in the middle (#3 and #4) were focused on developing the most promising ideas from different
-          perspectives; we took into account Posti's users, Posti's needs and the feasibility of each proposed solution.
-          The final sprints were instead dedicated in refining the final concept to present it to the company.
+        <p class="lead mb-3">After an initial research phase, where we researched what are the technologies mostly used by visually impaired users to access and navigate the Internet, the amount of people using those technologies, and the pages that received the most traffic by this users, we started the Usability Evaluation with the <b>Expert Evaluation</b> phase.</p>
+        First, we defined the two Research Questions:
+        <ol>
+          <li>
+            What kind of accessibility issues do people with special needs face using the main navigation of Elisa Viihde?
+          </li>
+          <li>
+            What kind of usability issues do people with special needs face in the customer journeys laid out by Elisa?
+          </li>
+        </ol>  
+        Then, we selected two sets of guidelines:
+          <ol>
+            <li>Nielsen's 10 general principles for interaction design (<a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank"
+              rel="noopener noreferrer"><i class="fas fa-link"></i></a>) that allowed us to verify the extent of the usability of Elisaviihde for all its users, without limiting our scope too much to the visually impaired only.
+            </li>
+            <li>
+              WCAG (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-link"></i></a>) to understand which level of compliance the webpage was reaching and to better target our user group.
+            </li>
+          </ol>
+          We applied these guidelines to two possible customer journeys:
+          <ol>
+            <li>Subscription: the user subscribes to "Aitio" (<a href="https://elisaviihde.fi/aitio" target="_blank"
+            rel="noopener noreferrer"><i class="fas fa-link"></i></a>), a Netflix-style streaming service, from the dedicated page.</li>
+            <li>Rental: the user rents a movie from the rental section </li>
+          </ol>
+          And to three elements of the User Interface:
+          <ol>
+            <li>Video Player UI: the buttons used to control the volume, to play/pause/stop the video, and so on, present in the video player.</li>
+            <li>Navigation and search: to what extent the search box and the navigation elements are accessible for people using alternative input methods (e.g. keyboard only navigation).</li>
+            <li>Front page: overall usabily and accessibility of the front page.</li>
+          </ol>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <figure class="figure">
+              <img src="img/organization plan.png" class="img-fluid" alt="Organization plan for the Expert Evaluation">
+              <figcaption class="figure-caption">The Figure above shows how the tasks have been divided and organized between team members to allow parallel work for the Expert Evaluation phase.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <p class="lead mb-3">After the Expert Evaluation, we proceeded with the <b>Empirical Evaluation</b> phase. We kept the same Research Questions to gather additional insights. We recruited a total of 4 users, belonging to our target user group, that were tasked to complete the same customer journey defined for the Expert Evaluation.
+        We opted to let every user use their own devices and set-up, to avoid possible issues with the instruments and to let the user perform at their best, using the technologies they were already familiar with.
         </p>
-        <div class="row">
-          <div class="col-md-5">
-            <img src="img/mindmap.png" class="img-fluid" alt="Mindmap of Posti services">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-5">
-            <p class="lead">
-              A mindmap of some of the Posti's services, advertised on its website that we realized during the initial
-              Sprint (Sprint #1); the purpose of the map is to collect in a single view all the services that were
-              easily discoverable by the users.
-              <br /><br />In this way, it was easier to have an overview of everything that was being offered, and we
-              could start to brainstorm around the core services (in the center of the map) and the support services.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="techniques">
-      <div class="w-100">
-        <h2 class="mb-5">Techniques</h2>
-        <p class="lead mb-5">During the whole project we used user-centered design and ideation techniques.</p>
-        <div class="row">
-          <div class="col-xs-6 col-md-5">
-            User-centered techniques:
-            <ul>
-              <li>User Research</li>
-              <li>Open-ended and Closed-ended questionnaires</li>
-              <li>Semi-structured interviews</li>
-              <li>User shadowing</li>
-            </ul>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-xs-6 col-md-5">
-            Ideation techniques:
-            <ul>
-              <li>Mindmaps</li>
-              <li>The 6 Thinking Hats</li>
-              <li>Visualization</li>
-              <li>Prototyping</li>
-            </ul>
-          </div>
-        </div>
+        The Table below shows the users that took part in the Empirical Evaluation phase.
+        <table class="table table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Details</th>
+              <th scope="col">Technologies</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Visually impaired</td>
+              <td>Mac laptop + OSMagnifierTool + Mouse + Keyboard</td>
+              <td>Didn't speak Finnish, had to be helped to understand the interface.</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Visually impaired</td>
+              <td>Apple iPad (2nd or 3rd generation) as well as a newer iPhone, both with a software magnifier.</td>
+              <td>They had experience with ElisaViihde mobile app, but not with the website. As the Elisa Viihde website failed to work on the user's iPad, we conducted the test using their iPhone.</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Blind<span class="text-danger">*</span></td>
+              <td>Windows laptop with screen-reader.</td>
+              <td>Used only keyboard and auditory feedback.</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Visually impaired with Aniridia<span class="text-warning">*</span></td>
+              <td>Apple iPad with software magnifier and smart inverted colors.</td>
+              <td>Previous experience with ElisaViihde mobile app.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><span class="text-danger">*</span>Blind user accepted for the test due to the low number of sign-ups.</p>
+        <p><span class="text-warning">*</span>Aniridia: an eye disorder which causes reduced sharpness of vision and increased sensitivity to light.</p>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="results">
       <div class="w-100">
         <h2 class="mb-5">Results</h2>
-        <h3 class="mb-2">THE TOP 3 IDEAS VISUALIZATION</h3>
-        <p class="lead">We decided to visualize our top 3 ideas, by creating sketches and prototypes; in this way, it
-          was easier to interview Posti customers and get additional valuable insights regarding our ideas.
+        <p class="lead">
+          We provided the company (and our teachers) with a full report, with detailed findings obtained from our analysis; additionally, we included some suggestions on how some elements might be designed to address some of the issues highlighted.
+          We know that some of our suggestions were implemented in their website.
+          The final report, with all the results and findings from our evaluation, includes company private information, thus cannot be published here.
         </p>
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h4 class="mb-2">Posti Day</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vQe5YvMiLOR-ki6HveMfgl_0wK6oTCeInA0io1Yb3uJAQK5r4Z6sKqEd408NUsSTiET9mn144aOUe5K/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
+        <h3 class="mb-2">EXAMPLE OF DESIGN SUGGESTION</h3>
+        <p class="lead mb-3">Below an example of design suggestion we provided the company with: our tests showed that users were having troubles in finding the play button after purchasing or renting a movie.
+          For this reason, we moved the play button below the description of the movie, since in that area there is an higher contrast between the background and the button itself. Additionally, we labeled the button with a text label (in Finnish, "katso elokuva" means "watch film") that can be searched in the page.
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <figure class="figure">
+              <img src="img/original.png" class="img-fluid" alt="Original positioning of the play button">
+              <figcaption class="figure-caption">The play button is placed on top of the movie poster. in the center; it is difficult to see even for user with a perfect sight.</figcaption>
+            </figure>
           </div>
-          <div class="col-md-4">
-            <h4 class="mb-2">Postcards</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vT9SXO81WC_bBIlzQkUZN6TgQlEwKOD-aoLgFeEtLXVRmp_MZTMNx2Qil5T4jGA-MCQunLE52BZzpUg/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
-          </div>
-          <div class="col-md-4">
-            <h4 class="mb-2">Return labels</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vTJ5GpZN_UoHodUer2lmvMqEODbzZv4UTI2g5bpYF4aMi05I4hJ0oUMJU2vNr-Lnx3W5QmWKdsXxV5N/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
+          <div class="col-xs-12 col-md-6">
+            <figure class="figure">
+              <img src="img/new.png" class="img-fluid" alt="Suggested positioning of the play button">
+              <figcaption class="figure-caption">The play button is now under the text presenting the movie, clearly visible and labeled ("katso elokuva" = watch film).</figcaption>
+            </figure>
           </div>
         </div>
-        <h3 class="mb-2">THE FINAL CONCEPT</h3>
-        <p class="lead">At the end of the course, we developed and presented our final concept, Posti Day. It is a day
-          dedicated to Posti, that
-          comprises of activities with the purpose of discovering what Posti has to offer; in addition, it also had the
-          purpose to improve the company
-          image, by directly involving the customers in the Posti ecosystem.
-        </p>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="team">
       <div class="w-100">
-        <h2 class="mb-5">Team: Posti Revolution</h2>
-        <p class="lead">Our team was composed by 5 members (including me); every member had different areas of
-          expertise, different culture and different background.</p>
+        <h2 class="mb-5">Team: ElisaViihde</h2>
+        <p class="lead">Our team was composed by 3 members (including me); every member had different areas of
+          expertise, different culture and background.</p>
         <div class="row mb-md-5">
           <div class="col-xs-6 col-md-6">
-            <figure class="figure">
-              <img src="./img/post_revolution_logo_round.png" width="250" class="figure-img img-fluid rounded"
-                alt="Posti Revolution Logo">
-              <figcaption class="figure-caption">Posti Revolution Team Logo</figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-6 col-md-6">
-            <p class="lead">Team Posti Revolution:
+            <p class="lead">Team ElisaViihde:
               <ul>
                 <li>Federico - Italian</li>
-                <li>Laura - Finnish</li>
-                <li>Miska - Finnish</li>
-                <li>Thor - Belgian</li>
-                <li>Xinyan - Chinese</li>
+                <li>Neero - Finnish</li>
+                <li>Simo - Finnish</li>
               </ul>
             </p>
           </div>
-        </div>
-        <h3 class="mb-2">Team organization</h3>
-        <div class="row">
-          <div class="col-xs-6 col-md-6">Each Sprint was divided into tasks, and each team member had to address one of
-            those. We decided to rotate the tasks
-            in such a way that every team member could do a different one in each sprint. In every Sprint, one team
-            member ("The Runner") was in
-            charge to organize team meetings, assign tasks and verify
-            that every deliverables was ready before the deadline.
-          </div>
-          <div class="col-xs-6 col-md-6"><img src="./img/team organization.png" class="img-fluid"></div>
         </div>
       </div>
     </section>
