@@ -49,35 +49,11 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <style>
-      .active-filter {
-        color: rgba(255, 255, 255, 1) !important;
-      }
-    </style>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Back to Résumé</a>
         </li>
-        <!--<li class="nav-item">
-          <span class="nav-link" href="#">Projects:</span>
-        </li>
-        <li class="nav-item">
-          <a data-filter-name="all" class="nav-link active-filter filter" href="#">Display All
-          </a>
-        </li>
-        <li class="nav-item">
-          <a data-filter-name="personal" class="nav-link filter" href="#">Personal</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter-name="professional" class="nav-link filter" href="#">Professional</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter-name="university" class="nav-link filter" href="#">University</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter-name="wip" class="nav-link filter" href="#">WIP</a>
-        </li>-->
       </ul>
     </div>
   </nav>
@@ -93,18 +69,16 @@
           +39 340 93 53 797 ·
           <a href="mailto:name@email.com">federico.macchi@mail.polimi.it</a>
         </div>
-        <p class="lead mb-5" style="width: 85%;">
-          Welcome to My Portfolio; here you will find all my projects, ordered
+        <p class="lead mb-4" style="width: 85%;">
+          Welcome to My Portfolio; here you will find all (most of...) my projects, ordered
           from the most recent to the oldest one. Each project is labeled
-          according to its type: Personal, University, Professional. The label
-          "WIP" denotes a Work In Progress project.
-          <br /><br />
-          <!--<span class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
-            Apply the filters below to filter the projects.
-          </span>
-          <span class="d-none d-sm-none d-md-block">Apply the filters in the menu to filter the projects.</span>-->
+          according to its type: 
+          <ul>
+            <li>Personal: denotes a project that I carried out alone to train myself.</li>
+            <li>University: denotes a project developed for a University course, alone or with a team of students.</li>
+            <li>Professional: denotes a project developed for a company (alone or in cooperation with the University).</li>
+          </ul>
         </p>
-        <div id="filters" class="mt-4 d-md-none">
           <style>
             button.active-filter,
             button.active-filter:hover,
@@ -122,22 +96,6 @@
               border-color: #bd5d38;
             }
           </style>
-          <button data-filter-name="all" type="button" class="btn btn-dark active-filter filter">
-            Display All
-          </button>
-          <button data-filter-name="personal" type="button" class="btn btn-dark filter">
-            Personal
-          </button>
-          <button data-filter-name="professional" type="button" class="btn btn-dark filter">
-            Professional
-          </button>
-          <button data-filter-name="university" type="button" class="btn btn-dark filter">
-            University
-          </button>
-          <button data-filter-name="wip" type="button" class="btn btn-dark filter">
-            WIP
-          </button>
-        </div>
       </div>
     </section>
 
