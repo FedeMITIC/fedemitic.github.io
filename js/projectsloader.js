@@ -11,6 +11,12 @@ const projectCard = data => {
       badges += `&nbsp;&nbsp;<span class="badge badge-dark">${data.tags[i]}</span>`;
     }
   }
+  let link = '';
+  if (data.btnUrl !== '#') {
+    link = `<a href="${data.btnUrl}" class="btn btn-primary" name="btn-details">Read more</a>`;
+  } else {
+    link = `<button href="${data.btnUrl}" class="btn btn-primary" name="btn-details" disabled>Read more</button>`;
+  }
   return `
     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
       <div class="card">
@@ -24,9 +30,7 @@ const projectCard = data => {
           <p class="card-text">
             ${data.desc}
           </p>
-          <a href="${data.btnUrl}" class="btn btn-primary" name="btn-details">
-            Details
-          </a>
+          ${link}
         </div>
       </div>
     </div>`;
@@ -103,7 +107,7 @@ function setAllFilter(filters) {
     updateFiltersView(filtersElem, filters);
   });
   // Disable the buttons if the related project is not ready yet.
-  const btns = $('button[name="btn-details"]');
+  const btns = $('a[name="btn-details"]');
   for (let btn of btns) {
     const href = btn.attributes.href.value;
     if (href === '#') {
