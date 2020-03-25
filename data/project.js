@@ -110,7 +110,7 @@ const PROJECTS = [
     desc: 'Open source web-app for pro and amateur homebrewers.',
     date: 2017,
     extdesc: '',
-    btnUrl: '#',
+    btnUrl: '../projects/homebrewlab/index.html',
     tags: ['personal', 'university'],
   },
 ];
