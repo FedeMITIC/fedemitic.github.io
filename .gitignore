@@ -3,4 +3,5 @@ node_modules
 .vscode/*
 .vscode/
 *.ai
+*.psd
 projects/*/*.psd
