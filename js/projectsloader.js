@@ -24,9 +24,9 @@ const projectCard = data => {
           <p class="card-text">
             ${data.desc}
           </p>
-          <button onclick="location.href='${data.btnUrl}';" href="${data.btnUrl}" class="btn btn-primary" name="btn-details">
+          <a href="${data.btnUrl}" class="btn btn-primary" name="btn-details">
             Details
-          </button>
+          </a>
         </div>
       </div>
     </div>`;
