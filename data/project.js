@@ -1,14 +1,14 @@
 /**
  * Contains all the projects. Each project has:
  * ID :int - incremental, starting from 1,
- * btnUrl :string - URI of the project
+ * btnUrl :string - URI of the project ('#' makes the project not accessible (only the card is visible)) 
  * name :string,
  * img :string,
  * desc :string - description for the card
  * date: date (full year)
  * extdesc :string - extended description for the project page (might contain html tags)
  * date :string
- * tags :array - available labels: personal, professional, university, wip. Multiple lables may be present (alphabetically ordered)
+ * tags :array - available labels: personal, professional, university. Multiple lables may be present (alphabetically ordered)
  *
  */
 const PROJECTS = [
@@ -50,7 +50,7 @@ const PROJECTS = [
     desc: 'Usability Evaluation of ElisaViihde, Elisa\'s streaming platform.',
     date: 2019,
     extdesc: '',
-    btnUrl: '#',
+    btnUrl: '../projects/elisaviihde/index.html',
     tags: ['professional', 'university'],
   },
   {
@@ -67,7 +67,7 @@ const PROJECTS = [
     id: 6,
     name: 'Namibia ID Application',
     img: '../projects/namibia-id/img/cover.png',
-    desc: 'An application developed for the UIC Course in Aalto.',
+    desc: 'An application developed for the User Interface Construction Course in Aalto.',
     date: 2018,
     extdesc: '',
     btnUrl: '#',
@@ -107,7 +107,7 @@ const PROJECTS = [
     id: 10,
     name: 'HomebrewLab',
     img: '../projects/homebrewlab/img/cover.gif',
-    desc: 'Free web-app for pro and amateur homebrewers.',
+    desc: 'Open source web-app for pro and amateur homebrewers.',
     date: 2017,
     extdesc: '',
     btnUrl: '#',
