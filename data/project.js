@@ -14,13 +14,13 @@
 const PROJECTS = [
   {
     id: 1,
-    name: 'Portfolio',
+    name: 'AIRsound',
     img: '../projects/portfolio/img/cover.png',
-    desc: 'Website for my Résumé and Portfolio; built with JS, jQuery and Bootstrap.',
+    desc: 'Python/Kivy based application to perform the tapping test.',
     date: 2019,
     extdesc: '',
     btnUrl: '#',
-    tags: ['personal', 'wip'],
+    tags: ['personal'],
   },
   {
     id: 2,
