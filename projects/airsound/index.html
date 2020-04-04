@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Federico Macchi | Homebrewlab</title>
+  <title>Federico Macchi | AIRSound</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../..//favicon-16x16.png">
@@ -75,16 +75,17 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="intro">
       <div class="w-100">
-        <h1 class="mb-0">Homebrewlab</h1>
-        <div class="subheading mb-5">Open Source web-app for enthusiast homebrewers</div>
-        <p class="lead mb-5">For the course "Progetto Ingegneria Informatica" (Information Engineering Project)(<a href="https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=EVENTO&c_insegn=089020&aa=2016&k_cf=225&k_corso_la=358&ac_ins=0&k_indir=I1A&lang=EN&tipoCorso=ALL_TIPO_CORSO&semestre=2&idGruppo=3265&idRiga=195647&codDescr=089020" target="_blank"
-          rel="noopener noreferrer" aria-label="Course detail page"><i class="fas fa-link"></i></a>) of my Bachelor at Politecnico di Milano, I was tasked to ideate and develop a webapp, aimed at enthusiast and professional homebrewers; the platform allows users to keep track of their brewing ingredients and equipments and offers an interactive tool to customize recipes.
+        <h1 class="mb-0">AIRSound</h1>
+        <div class="subheading mb-5">AI-based assistant for tapping tests</div>
+        <p class="lead mb-5">In December 2019, I took part in another hackathon by Leonardo S.P.A., after the Innovathon one in November.
+          This time the hackathon was not limited to the conventional 2-3 days, but each team had one month to develop an application to address one of the 
+          three proposed challenges; there were almost no constrains on the tools and technologies that could be employed.<br />
+          Each team was composed of five members, a tutor from the Italian Air Force, and a mentor from the company.
         </p>
         <h3 class="mb-2">My Roles</h3>
         <p class="lead">
-          As the team leader of the back-end team, I was the one in charge of designing the overall structure of the APIs and the tooling used to create them (libraries, tools, languages...); I was also responsible to write the documentation for the various endpoint and to support the front-end team.
-          I co-ordinated the work of my other two teammates, dividing their tasks into atomic subtasks and organizing frequent meeting to discuss the objectives that have been reached and what was still missing.
-          Additionally, I provided the front-end team with the code to properly communicate with the back-end APIs and implemented the login flow.
+          Designed and implemented the GUI of the application.<br />
+          Integrated the ML algorithms into the GUI.
         </p>
       </div>
     </section>
@@ -92,103 +93,78 @@
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="challenge">
       <div class="w-100">
         <h2 class="mb-5">Challenge</h2>
-        <p class="lead mb-5">The challenge was to build a responsive multi-platform web application, based on a modern stack. The selling point of the application was its customizability and its features.
-          Beer brewing is a process that involves multiple phases; even by following precisely the ingredients and methods in each phase, the results obtained may sligthly vary; Homebrewlab provides its users 
-          with the ability of inserting their personal results in the recipe whose ingredients are then automatically re-calculated to compensate with the differences in the results.
-          The app had to be open source and free, so all the libraries and technologies used had to be free of charge as well.
+        <p class="lead mb-2">The three topics were:</p>
+          <ol>
+            <li>Create an Augmented Reality assistant to help aircrafts maintainers during their routine and extraordinary maintenance procedures.
+              To repair or substitute a component in an aircraft, there are many procedures that must be carried out in order; some of them are for 
+              the safety of the maintainer, others to ensure a correct installation of the new piece.
+              An AR assistant can help the maintainer by giving them precise directions directly in the AR visor.
+            </li>
+            <li>Create an algorithm to help aircrafts maintainers to perform the tapping test; 
+              the tapping test is a technique that consists in tapping on a mechanical component of an airplane and listening to the produced sound.
+              An expert maintainer can properly understand if a piece is damaged, thus not suitable for flying by listening to this sound.
+            </li>
+            <li>Create an assistant to help aircrafts maintainers find and classify damages/issues on aircrafts' components and report them.
+              While some damages are clearly visible, other are more difficult to find, especially on bigger components that have a larger surface to analyze.
+              Besides, the operator need to properly classify the kind of damage and to fill a precise report, before asking for repairs.
+            </li>
+          </ol>
+        <p class="lead">
+          All the three challenges were interesting, however, we decided to focus on the second one; create an algorithm for the tapping test.
         </p>
-        <h3 class="mb-2">OTHER FEATURES</h3>
-        <p class="lead mb-3">In addition to the main feature described above, the app should support:</p>
-          <ul>
-            <li>Ingredients storage: users can save the list of the ingredients they own.</li>
-            <li>Equipment storage: users can save the list of the equipment they own.</li>
-            <li>Recipe feasibility: the app tells the users which recipe they can brew using the specified ingredients and equipments.</li>
-            <li>Recipe planner and visual builder: modify recipes by altering the values obtained in the different phases. Create test batchs by splitting the production and applying different techniques.</li>
-            <li>Social network: share recipes and ingredients with other homebrewers<span class="text-danger">*</span>.</li>
-          </ul>
-          <p><span class="text-danger">*</span>Never implemented.</p>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="approach">
       <div class="w-100">
         <h2 class="mb-5">Approach</h2>
-        <p class="lead mb-3">
-          After a first meeting with the teacher, where the main features and requirements were described, we defined a project plan, with detailed deadline and list of all the technologies we planned to use to develop the project.
+        <p class="lead mb-3">Our team was the only one composed of participants that enrolled alone, so we had to work for the whole month remotely.
+          For this reason, we set up daily calls using the Cisco Meeting App offered by Leonardo S.P.A. 
+          <br />From the beginning we divided the workload into subtasks using a trello alternative and a slack channel.
+          Eugenio and me ideated, designed, and implemented the Graphical User Interface of the application.<br />
+          Bruno and Alessandro developed the Machine Learning Algorithm (KNN Classifier).<br />
+          Fabio studied the online platform provided by Oracle to improve the efficiency and the training speed of the ML algorithms.
         </p>
-        <p class="lead">The stack we proposed and then used was a variation of the MEAN stack:</p>
-        <ul>
-          <li>Mongo DB (for the database)</li>
-          <li>Express JS (for the back-end APIs)</li>
-          <li>Vue JS (for the front-end, instead of Angular)</li>
-          <li>Node JS (for the back-end APIs)</li>
-        </ul>
-        <p class="lead">The app followed the REST architecture, with the front-end and back-end completely independent from each other. Initially, the APIs were hosted on the Google Cloud Engine (for which we received $5000.00 from Google) and the front-end was hosted on Heroku on a free dyno.
-          The database, on the other hand, was hosted on mongoDB Atlas.
-          Later, also the front-end was moved to the Google Cloud Engine because it allowed us to customize the infrastracture better; indeed, in this way it was possible to setup a SSL certificate, an NGINX reverse proxy for the connection to the APP and PM2 to control and ensure the back-end was always reachable from the front-end.
+        <p class="lead">At the beginning, I sketched out an interactive prototype of the interface using Axure RP; using the double diamond design technique,
+          we iterated together the initial prototype by first adding features and redefining elements until we finally reached a consesus and decided a
+          definitive design. 
+          <br /><br /><strong>TODO: ADD IMAGES</strong><br /><br />
         </p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <figure class="figure">
+              <a href="#" data-toggle="lightbox" data-title="The test screen of the initial prototype"><img src="" class="img-fluid" alt="The test screen of the initial prototype"></a>
+              <figcaption class="figure-caption">The test screen in the initial mockup.</figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <figure class="figure">
+              <a href="#" data-toggle="lightbox" data-title="Final version of the test screen"><img src="" class="img-fluid" alt="The final test screen"></a>
+              <figcaption class="figure-caption">The final version of test screen.</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="results">
       <div class="w-100">
         <h2 class="mb-5">Results</h2>
-        <p class="lead">
-          The current version of the application is available at this address: <a href="https://homebrewlab.cloudno.de/" target="_blank"
-          rel="noopener noreferrer">https://homebrewlab.cloudno.de</a>.<br />
-          <a href="docs/Report HomebrewLab.pdf" target="_blank"
-          rel="noopener noreferrer">Here</a> and <a href="docs/Presentazione.pdf" target="_blank"
-          rel="noopener noreferrer">here</a> it is possible to download the final report and the final presentation respectively (in Italian only).
-          Figures below show some screenshots taken from the interface of the application (the language of the UI is Italian, only a partial translation have been made).
+        <p class="lead">After one month of hard work, our team finally met in Florence (Italy) for the last two days of the hackathon.
+          There, we were able to complete and refine the application and got it ready for the final presentations.
+          In the end, we won the second prize and an acknowledgement for the best teamwork.
         </p>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <figure class="figure">
-              <a href="img/newhop.png" data-toggle="lightbox" data-title="A New Hop(e)"><img src="img/newhop.png" class="figure-img img-fluid" alt="Form to save a new hop"></a>
-              <figcaption class="figure-caption">Form to create a new hop and add it to your own ingredients.</figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <figure class="figure">
-              <a href="img/new recipe.png" data-toggle="lightbox" data-title="Recipe builder"><img src="img/new recipe.png" class="figure-img img-fluid" alt="Recipe builder"></a>
-              <figcaption class="figure-caption">Classic recipe builder.</figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <figure class="figure">
-              <a href="img/equipment.png" data-toggle="lightbox" data-title="Equipment"><img src="img/equipment.png" class="figure-img img-fluid" alt="Suggested positioning of the play button"></a>
-              <figcaption class="figure-caption">Equipment setup and calibration.</figcaption>
-            </figure>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="team">
       <div class="w-100">
-        <h2 class="mb-5">Team: Homebrewlab</h2>
-        <p class="lead">Our team was composed by 6 members (including me):</p>
-        <div class="row mb-md-5">
-          <div class="col-xs-6 col-md-6">
-            <p class="lead">Team Homebrewlab | back-end:
-              <ul>
-                <li>Federico</li>
-                <li>Tommaso</li>
-                <li>Sirlan</li>
-              </ul>
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-6">
-            <p class="lead">Team Homebrewlab | front-end:
-              <ul>
-                <li>Andrea</li>
-                <li>Mathyas</li>
-                <li>Samuele</li>
-              </ul>
-            </p>
-          </div>
-          <p class="lead">Additional member: Selene<br/>Teacher: Florian Daniel</p>
-        </div>
+        <h2 class="mb-5">Team Avanti</h2>
+        <p class="lead">Our team, from left to right: Major De Angelis Roberto, Eugenio, Bruno, Fabio, Alessandro, me, and Daniele.</p>
+        <figure class="figure">
+          <img src="./img/team.png" width="900" class="figure-img img-fluid rounded" alt="EITeam">
+            <figcaption class="figure-caption">Team Avanti, inspired by the P-180 produced by Piaggio.</figcaption>
+        </figure>
       </div>
     </section>
 
