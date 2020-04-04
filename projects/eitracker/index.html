@@ -26,6 +26,7 @@
 
   <!-- Custom styles for this template -->
   <link href="../../css/resume.min.css" rel="stylesheet">
+  <link href="../../css/custom.css" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-56293560-10"></script>
   <script>
@@ -39,7 +40,7 @@
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <h2 class="mb-0">POSTI DAY</h2>
+      <h2 class="mb-0 text-white">EITracker</h2>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,10 +55,10 @@
           <a class="nav-link js-scroll-trigger" href="#challenge">Challenge</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#approach">Approach</a>
+          <a class="nav-link js-scroll-trigger" href="#evaluation">Evaluation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#techniques">Techniques</a>
+          <a class="nav-link js-scroll-trigger" href="#approach">Approach</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#results">Results</a>
@@ -75,24 +76,16 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="intro">
       <div class="w-100">
-        <h1 class="mb-0">POSTI DAY
-        </h1>
-        <div class="subheading mb-5">An exciting day with fun activities related to Posti and their services.</div>
-        <p class="lead mb-5">During the Spring Semester at Aalto University, for the Course CS-E5200 - Design Project
-          (<a href="https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1125650467&takaisin=etusivu.html"
-            target="_blank"><i class="fas fa-link"></i></a>), we were tasked to ideate a new concept for Posti (<a
-            href="https://www.posti.fi/index-en.html" target="_blank"><i class="fas fa-link"></i></a>), the largest
-          delivery company in Finland.
-          The purpose of the concept was to improve Posti's public image and infuse new trust in the brand. For this
-          reason, the project heavily relied on user-centered desing techniques.
-          At the end of the course, we presented Posti Day, our concept, to Posti employees during a final gala.</p>
+        <h1 class="mb-0">EITracker</h1>
+        <div class="subheading mb-5">AI-base self driving terrestrial vehicle.</div>
+        <p class="lead mb-5">In the Autumn of 2019 I took part into a hackathon in Rome about self driving vehicles. The hackathon proposed the same challenge
+          to every team, composed of 4 participants and 1 mentor from the organizing company, Leonardo S.P.A.
+        </p>
         <h3 class="mb-2">My Roles</h3>
         <p class="lead">
-          Ensuring goals are met and tasks are completed each Sprint.<br />
-          Creating visualization for one of the ideas (return label).<br />
-          Realizing a pilot event for Posti Day.<br />
-          Recording and editing the video of the pilot event to use as final prototype.<br />
-          Pitching at the final gala, to present the concept to Posti.<br />
+          Designed the frame for the car (using a sheet of PVC and a cutter) <br />
+          Designed the circuit to power the motors, the sensors, and the brain of the car (a Raspberry Pi model 3A+)<br />
+          Implemented the algorithms to send commands to the motors, to move the car.
         </p>
       </div>
     </section>
@@ -100,169 +93,136 @@
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="challenge">
       <div class="w-100">
         <h2 class="mb-5">Challenge</h2>
-        <p class="lead mb-5">The task was to create a new service/product for Posti; the concept had to be feasible from
-          a technological and economical point of view.
-          Indeed, along with a concrete concept, we also had to show its business potential.
-          We also had to take into account already existing services and products provided by Posti and integrate our
-          concept in their ecosystem; it had to respect the company's values and image, and tackle specific problems in
-          specific areas.
+        <p class="lead mb-5">The task for this hackathon was to build a self driving car that could follow a path, inside a tunnel, 
+          recognize the people inside it and deploy medikits (small plastic cubes) for them.
+          The whole circuit had to be completed in less than five minutes, from start to finish, and it was forbidden to interact with the car in any way;
+          the car had to be fully autonomous from startup to end.
+          Inside the tunnel, there were a total of 8 people to rescue; obstacles were also present, and also road signage that could resemble the appeareance of people
+          (e.g. Men at work sign). Thus, the car had to distinguish between the actual people (printed figures standing in the tunnel) from signage.
+          <br />Finally, each team had a fixed budget of "Leocoins" to buy the components/algorithms for their car; the prices in the market followed the
+          rules of classical economy, so high supply and low demand meant cheaper components and vice versa. Additionally, the supply was not unlimited, so 
+          only a certain amount of component was available for purchase (e.g. there were just 4 pre-built frames for the cars for 8 teams).
         </p>
+      </div>
+    </section>
+
+    <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="evaluation">
+      <div class="w-100">
+        <h2 class="mb-5">Final Evaluation</h2>
+        <p class="lead mb-2">Each team was evaluated with the following parameters:</p>
+          <ul>
+            <li>Time to complete: the lower the better, but lower than 5 minutes.</li>
+            <li>Accuracy: number of medikits correctly deployed.</li>
+            <li>Cost efficiency: cost of the finished product, the lower the better.</li>
+            <li>Implementation design: how the solution was ideated and built.</li>
+          </ul>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="approach">
       <div class="w-100">
         <h2 class="mb-5">Approach</h2>
-        <p class="lead mb-5">The whole project followed the Agile framework; it was divided into 6 sprints, each of them
-          about 2 weeks long.
-          Each sprint had a different focus; the first sprints were focused around discovering the current issues that
-          Posti was facing, and proposing new ideas.
-          The sprints in the middle (#3 and #4) were focused on developing the most promising ideas from different
-          perspectives; we took into account Posti's users, Posti's needs and the feasibility of each proposed solution.
-          The final sprints were instead dedicated in refining the final concept to present it to the company.
+        <p class="lead mb-5">Since for the hackathon we only had around 30 hours and one member of our team never showed up, we decided to divide
+          our group into two sub-groups of 2 people, to split and parallelize the workload. I worked with the mentor on the frame and the circuit, while my other two teammates worked on
+          the AI algorithms. So, while Bruno and Giulio were working on the algorithms, I worked with Paolo to protoype and built the frame.
         </p>
         <div class="row">
           <div class="col-md-5">
-            <img src="img/mindmap.png" class="img-fluid" alt="Mindmap of Posti services">
+            <figure class="figure">
+              <img src="./img/frame.jpg" alt="sketch of the car frame" width="500" height="400"
+                class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Sketch of the car frame.</figcaption>
+            </figure>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            <p class="lead">
-              A mindmap of some of the Posti's services, advertised on its website that we realized during the initial
-              Sprint (Sprint #1); the purpose of the map is to collect in a single view all the services that were
-              easily discoverable by the users.
-              <br /><br />In this way, it was easier to have an overview of everything that was being offered, and we
-              could start to brainstorm around the core services (in the center of the map) and the support services.
-            </p>
+            <figure class="figure">
+              <img src="./img/frame_built.jpg" alt="car frame with some components" width="800" height="451"
+                class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Frame built and some of the car components.</figcaption>
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="techniques">
-      <div class="w-100">
-        <h2 class="mb-5">Techniques</h2>
-        <p class="lead mb-5">During the whole project we used user-centered design and ideation techniques.</p>
+        <p class="lead mb-2">The final circuit was composed of:</p>
+          <ul class="mb-4">
+            <li>4 motors</li>
+            <li>2 L298N H Bridge</li>
+            <li>RaspberryPi 3A+</li>
+            <li>RaspberryPi camera</li>
+            <li>Logic converter from 5V to 3.3V</li>
+            <li>Battery pack ~9V</li>
+          </ul>
+          <figure class="figure">
+            <img src="./img/finished.jpg" alt="Completed circuit mounted on the frame" width="900"
+              class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption">Completed circuit mounted on the frame.</figcaption>
+          </figure>
+        <p class="lead mb-5">
+          The AI algorithm developed was based on YOLO (<a href="https://pjreddie.com/darknet/yolo/" target="_blank" rel="noopener noreferrer">You Only Look Once</a> (opens in a new tab)); it acquired a picture of the scene seen by the car through the 
+          RaspberryPi camera, then analyzed it to find the people to rescue.<br />
+          Figures below demonstrate how the algorithm worked and how the tunnel was built.
+        </p>
         <div class="row">
-          <div class="col-xs-6 col-md-5">
-            User-centered techniques:
-            <ul>
-              <li>User Research</li>
-              <li>Open-ended and Closed-ended questionnaires</li>
-              <li>Semi-structured interviews</li>
-              <li>User shadowing</li>
-            </ul>
+          <div class="col-md-5">
+            <figure class="figure">
+              <img src="./img/before.jpg" alt="frame of the car" width="806" height="400"
+                class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Before the analysis of the scene.</figcaption>
+            </figure>
           </div>
           <div class="col-md-1"></div>
-          <div class="col-xs-6 col-md-5">
-            Ideation techniques:
-            <ul>
-              <li>Mindmaps</li>
-              <li>The 6 Thinking Hats</li>
-              <li>Visualization</li>
-              <li>Prototyping</li>
-            </ul>
+          <div class="col-md-5">
+            <figure class="figure">
+              <img src="./img/after.jpg" alt="frame of the car with some components" width="800" height="400"
+                class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Results.</figcaption>
+            </figure>
           </div>
         </div>
+        <p class="lead">We decided to write the algorithms and the interfacing with the components in python; in this way, integrating
+          the two pieces of software was rather quick and easy.
+        </p>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="results">
       <div class="w-100">
         <h2 class="mb-5">Results</h2>
-        <h3 class="mb-2">THE TOP 3 IDEAS VISUALIZATION</h3>
-        <p class="lead">We decided to visualize our top 3 ideas, by creating sketches and prototypes; in this way, it
-          was easier to interview Posti customers and get additional valuable insights regarding our ideas.
-        </p>
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h4 class="mb-2">Posti Day</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vQe5YvMiLOR-ki6HveMfgl_0wK6oTCeInA0io1Yb3uJAQK5r4Z6sKqEd408NUsSTiET9mn144aOUe5K/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
-          </div>
-          <div class="col-md-4">
-            <h4 class="mb-2">Postcards</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vT9SXO81WC_bBIlzQkUZN6TgQlEwKOD-aoLgFeEtLXVRmp_MZTMNx2Qil5T4jGA-MCQunLE52BZzpUg/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
-          </div>
-          <div class="col-md-4">
-            <h4 class="mb-2">Return labels</h4>
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vTJ5GpZN_UoHodUer2lmvMqEODbzZv4UTI2g5bpYF4aMi05I4hJ0oUMJU2vNr-Lnx3W5QmWKdsXxV5N/embed?start=false&loop=true&delayms=3000"
-              frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
-          </div>
-        </div>
-        <h3 class="mb-2">THE FINAL CONCEPT</h3>
-        <p class="lead">At the end of the course, we developed and presented our final concept, Posti Day. It is a day
-          dedicated to Posti, that
-          comprises of activities with the purpose of discovering what Posti has to offer; in addition, it also had the
-          purpose to improve the company
-          image, by directly involving the customers in the Posti ecosystem.
+        <p class="lead">In the end, our car was not able to compete in the final test; even though the algorithms and the circuit were working together,
+          we discovered that the processing power of the Raspberry PI alone was not enough to complete the circuit fast enough. Given the huge time and budget constrain, we were not able to
+          properly test our solution (testing on the circuit had a cost as well, and a team could only reserve a certain amount of 15min slots), so we did not discover 
+          this flaw until the end. Additionally, the plastic used to build the frame (that was give to us by the organizers at the beginning) was not strong enough to support 
+          the components and the vibration of the motors; as a result, all the teams that could not buy the pre-made frame (so including us) were not able to assemble a car.
+          <br />However, I believe that as a team we were able to work together quite efficiently even though we had just met; I learnt a lot about how to integrate 
+          different components in modern circuits and many hardware techniques to adapt the voltage and the current to meet the requirements.
         </p>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="team">
       <div class="w-100">
-        <h2 class="mb-5">Team: Posti Revolution</h2>
-        <p class="lead">Our team was composed by 5 members (including me); every member had different areas of
-          expertise, different culture and different background.</p>
-        <div class="row mb-md-5">
-          <div class="col-xs-6 col-md-6">
-            <figure class="figure">
-              <img src="./img/post_revolution_logo_round.png" width="250" class="figure-img img-fluid rounded"
-                alt="Posti Revolution Logo">
-              <figcaption class="figure-caption">Posti Revolution Team Logo</figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-6 col-md-6">
-            <p class="lead">Team Posti Revolution:
-              <ul>
-                <li>Federico - Italian</li>
-                <li>Laura - Finnish</li>
-                <li>Miska - Finnish</li>
-                <li>Thor - Belgian</li>
-                <li>Xinyan - Chinese</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-        <h3 class="mb-2">Team organization</h3>
-        <div class="row">
-          <div class="col-xs-6 col-md-6">Each Sprint was divided into tasks, and each team member had to address one of
-            those. We decided to rotate the tasks
-            in such a way that every team member could do a different one in each sprint. In every Sprint, one team
-            member ("The Runner") was in
-            charge to organize team meetings, assign tasks and verify
-            that every deliverables was ready before the deadline.
-          </div>
-          <div class="col-xs-6 col-md-6"><img src="./img/team organization.png" class="img-fluid"></div>
-        </div>
+        <h2 class="mb-5">Team: EITeam</h2>
+        <p class="lead">Our team, from left to right: Bruno, Paolo, Giulio, and me.</p>
+        <figure class="figure">
+          <img src="./img/team.jpg" width="900" class="figure-img img-fluid rounded" alt="EITeam">
+            <figcaption class="figure-caption">EITeam.</figcaption>
+        </figure>
       </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer class="page-footer font-small pt-1" style="background-color: #666">
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center text-white py-3">Favicon by <a style="color: white;"
-          href="https://www.freepik.com/" title="Freepik">Freepik</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Original
-        template <a href="https://startbootstrap.com/themes/resume" style="color: white;">here</a></div>
+      <div class="footer-copyright text-center text-white py-3">&copy; 2019 Federico Macchi | Original
+        template <a href="https://startbootstrap.com/themes/resume">here</a>.</div>
       <!-- Copyright -->
 
     </footer>
     <!-- Footer -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>

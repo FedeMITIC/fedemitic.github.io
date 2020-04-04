@@ -24,7 +24,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet" />
+  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-56293560-10"></script>
   <script>
@@ -39,7 +40,7 @@
 
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Scroll to top">
       <span class="d-block d-lg-none">Federico Macchi</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="" />
@@ -67,16 +68,17 @@
         <div class="subheading mb-5">
           11, M. Lucchina Lombardi Street · Induno Olona (VA), 21056, Italy ·
           +39 340 93 53 797 ·
-          <a href="mailto:name@email.com">federico.macchi@mail.polimi.it</a>
+          <a href="mailto:federico.macchi@mail.polimi.it">federico.macchi@mail.polimi.it</a>
         </div>
         <p class="lead mb-4" style="width: 85%;">
           Welcome to My Portfolio; here you will find all (most of...) my projects, ordered
           from the most recent to the oldest one. Each project is labeled
           according to its type: 
           <ul>
-            <li>Personal: denotes a project that I carried out alone to train myself.</li>
-            <li>University: denotes a project developed for a University course, alone or with a team of students.</li>
-            <li>Professional: denotes a project developed for a company (alone or in cooperation with the University).</li>
+            <li>Personal: denotes a project that I carried out alone for practice.</li>
+            <li>Hack: a project developed in the context of a hackathon.</li>
+            <li>University: denotes a project developed for a University course, alone or with classmates.</li>
+            <li>Professional: denotes a project developed for a company (indipendently or in cooperation with the University).</li>
           </ul>
         </p>
           <style>
@@ -106,19 +108,15 @@
 
   <!-- Footer -->
   <footer class="page-footer font-small pt-1" style="background-color: #666">
-    <!-- Copyright -->
-    <div class="footer-copyright text-center text-white py-3">
-      Favicon by
-      <a style="color: white;" href="https://www.freepik.com/"
-        title="Freepik">Freepik</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Original template
-      <a href="https://startbootstrap.com/themes/resume" style="color: white;">here</a>
-    </div>
-    <!-- Copyright -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-white py-3">&copy; 2019 Federico Macchi | Original
+        template <a href="https://startbootstrap.com/themes/resume">here</a>.</div>
+      <!-- Copyright -->
   </footer>
   <!-- Footer -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
