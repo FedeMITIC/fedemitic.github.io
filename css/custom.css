@@ -10,3 +10,19 @@
     text-decoration: underline;
 }
 
+ul, ol, body {
+    font-size: 1.15rem;
+    color: #666666;
+}
+
+a {
+    color: #c35328;
+}
+
+.text-primary {
+    color: #c35328 !important;
+}
+
+.bg-primary {
+    background-color: #c35328 !important;
+}
