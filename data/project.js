@@ -42,7 +42,7 @@ const PROJECTS = [
     btnUrl: '../projects/eitracker/index.html',
     tags: ['hack'],
   },
-  {
+  /*{
     id: Symbol(),
     name: 'Hearthstone Deck Builder',
     img: '../projects/hearthstone/img/cover.png',
@@ -51,7 +51,7 @@ const PROJECTS = [
     extdesc: '',
     btnUrl: '#',
     tags: ['personal'],
-  },
+  }*/,
   {
     id: Symbol(),
     name: 'Posti Day',
@@ -73,7 +73,7 @@ const PROJECTS = [
     btnUrl: '../projects/elisaviihde/index.html',
     tags: ['professional', 'university'],
   },
-  {
+  /*{
     id: Symbol(),
     name: 'Heimdall',
     img: '../projects/heimdall/img/cover.png',
@@ -122,7 +122,7 @@ const PROJECTS = [
     extdesc: '',
     btnUrl: '#',
     tags: ['personal'],
-  },
+  }*/,
   {
     id: Symbol(),
     name: 'HomebrewLab',
