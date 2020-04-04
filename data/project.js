@@ -1,6 +1,6 @@
 /**
  * Contains all the projects. Each project has:
- * ID :int - incremental, starting from 1,
+ * ID :int - Symbol() (might be used in the future, useless now),
  * btnUrl :string - URI of the project ('#' makes the project not accessible (only the card is visible)) 
  * name :string,
  * img :string,
@@ -29,7 +29,7 @@ const PROJECTS = [
     desc: 'Python/Kivy-based application to perform the tapping test on aircrafts.',
     date: 2019,
     extdesc: '',
-    btnUrl: '../projects/eitracker/index.html',
+    btnUrl: '../projects/airsound/index.html',
     tags: ['hack'],
   },
   {
@@ -102,7 +102,7 @@ const PROJECTS = [
     extdesc: '',
     btnUrl: '#',
     tags: ['university'],
-  },
+  },*/
   {
     id: Symbol(),
     name: 'WinAnt',
@@ -110,9 +110,9 @@ const PROJECTS = [
     desc: 'Cross-platform application developed at MonkeyCube S.R.L.',
     date: 2018,
     extdesc: '',
-    btnUrl: '#',
+    btnUrl: '../projects/winant/index.html',
     tags: ['professional'],
-  },
+  },/*
   {
     id: Symbol(),
     name: 'Auth0 Users',
@@ -135,5 +135,8 @@ const PROJECTS = [
   },
 ];
 
-// const blocks the reassigning but still let other code to modify the object itself, so let's freeze it (shallow freeze though)
+// const blocks the reassigning but still let other code to modify the object itself, so let's freeze it.
 Object.freeze(PROJECTS);
+for (const item of PROJECTS) {
+  Object.freeze(item);
+}
