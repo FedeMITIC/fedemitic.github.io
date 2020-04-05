@@ -23,6 +23,8 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
 
   <!-- Custom styles for this template -->
   <link href="../../css/resume.min.css" rel="stylesheet">
@@ -125,17 +127,15 @@
         <div class="row">
           <div class="col-md-5">
             <figure class="figure">
-              <img src="./img/frame.jpg" alt="sketch of the car frame" width="500" height="400"
-                class="figure-img img-fluid rounded">
-              <figcaption class="figure-caption">Sketch of the car frame.</figcaption>
+              <a href="./img/initial prototype.png" data-toggle="lightbox" data-title="The test screen of the initial prototype"><img src="./img/initial prototype.png" class="img-fluid" alt="The test screen of the initial prototype"></a>
+              <figcaption class="figure-caption">The test screen in the initial mockup.</figcaption>
             </figure>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5">
             <figure class="figure">
-              <img src="./img/frame_built.jpg" alt="car frame with some components" width="800" height="451"
-                class="figure-img img-fluid rounded">
-              <figcaption class="figure-caption">Frame built and some of the car components.</figcaption>
+              <a href="./img/initial prototype.png" data-toggle="lightbox" data-title="The test screen of the initial prototype"><img src="./img/initial prototype.png" class="img-fluid" alt="The test screen of the initial prototype"></a>
+              <figcaption class="figure-caption">The test screen in the initial mockup.</figcaption>
             </figure>
           </div>
         </div>
@@ -222,6 +222,15 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="../../js/resume.min.js"></script>
