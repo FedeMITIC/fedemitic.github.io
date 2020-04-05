@@ -55,9 +55,6 @@
           <a class="nav-link js-scroll-trigger" href="#challenge">Challenge</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#evaluation">Evaluation</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#approach">Approach</a>
         </li>
         <li class="nav-item">
@@ -76,16 +73,20 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="intro">
       <div class="w-100">
-        <h1 class="mb-0">EITracker</h1>
-        <div class="subheading mb-5">AI-based self driving terrestrial vehicle.</div>
-        <p class="lead mb-5">In the Autumn of 2019 I took part into a hackathon in Rome about self driving vehicles. The hackathon proposed the same challenge
-          to every team, composed of 4 participants and 1 mentor from the organizing company, Leonardo S.P.A.
+        <h1 class="mb-0">WinANT PRO</h1>
+        <div class="subheading mb-5">Modern cross-platform applications for network operators.</div>
+        <p class="lead mb-5">Starting in the Spring of 2018, I worked as a Software Developer Intern at Monkeycube S.R.L. a software company based in Milan, Italy.
+          Together with one of their developers, we developed a modern cross-platform application, based on NW Js, React Native, and Semantic UI.
+          The application was a porting of a very old program written in Visual Basic; its purpose was, given a set of data and variables, to compute the optimal position
+          for antenna towers for radio/television operators.
         </p>
         <h3 class="mb-2">My Roles</h3>
         <p class="lead">
-          Designed the frame for the car (using a sheet of PVC and a cutter).<br />
-          Designed the circuit to power the motors, the sensors, and the brain of the car (a Raspberry Pi model 3A+).<br />
-          Implemented the algorithms to send commands to the motors, to move the car.
+          Re-implemented the whole UI using Semantic UI.<br />
+          Translated some of the old features from Visual Basic to React.<br />
+          Discussed and implemented additional features, like a pdf report generator.<br />
+          Studied and proposed architecture and software design mplementations.<br />
+          Participated to the meetings with the final customer.
         </p>
       </div>
     </section>
@@ -93,39 +94,34 @@
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="challenge">
       <div class="w-100">
         <h2 class="mb-5">Challenge</h2>
-        <p class="lead mb-5">The task for this hackathon was to build a self driving car that could follow a path, inside a tunnel, 
-          recognize the people inside it and deploy medikits (small plastic cubes) for them.
-          The whole circuit had to be completed in less than five minutes, from start to finish, and it was forbidden to interact with the car in any way;
-          the car had to be fully autonomous from startup to end.
-          Inside the tunnel, there were a total of 8 people to rescue; obstacles were also present, and also road signage that could resemble the appeareance of people
-          (e.g. Men at work sign). Thus, the car had to distinguish between the actual people (printed figures standing in the tunnel) from signage.
-          <br />Finally, each team had a fixed budget of "Leocoins" to buy the components/algorithms for their car; the prices in the market followed the
-          rules of classical economy, so high supply and low demand meant cheaper components and vice versa. Additionally, the supply was not unlimited, so 
-          only a certain amount of component was available for purchase (e.g. there were just 4 pre-built frames for the cars for 8 teams).
+        <p class="lead mb-5">The main task was to create a porting of the old Visual Basic application, that was able to run only
+          on a Virtual Machine equipped with Windows 98 or 2000. Additionally, the final customer asked for a cross-platform version, that could run
+          not only on Windows 10, but at least on the latest version of Mac OS as well.
+          <br />Finally, the GUI of the application needed to be updated to respect the latest standard and to make it more user-friendly and intuitive.
         </p>
-      </div>
-    </section>
-
-    <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="evaluation">
-      <div class="w-100">
-        <h2 class="mb-5">Final Evaluation</h2>
-        <p class="lead mb-2">Each team was evaluated with the following parameters:</p>
-          <ul>
-            <li>Time to complete: the lower the better, but lower than 5 minutes.</li>
-            <li>Accuracy: number of medikits correctly deployed.</li>
-            <li>Cost efficiency: cost of the finished product, the lower the better.</li>
-            <li>Implementation design: how the solution was ideated and built.</li>
-          </ul>
       </div>
     </section>
 
     <section class="resume-section p3 p-lg-5 d-flex align-item-center" id="approach">
       <div class="w-100">
         <h2 class="mb-5">Approach</h2>
-        <p class="lead mb-5">Since for the hackathon we only had around 30 hours and one member of our team never showed up, we decided to divide
-          our group into two sub-groups of 2 people, to split and parallelize the workload. I worked with the mentor on the frame and the circuit, while my other two teammates worked on
-          the AI algorithms. So, while Bruno and Giulio were working on the algorithms, I worked with Paolo to protoype and built the frame.
-        </p>
+        <p class="lead mb-5">When I started my internship in the company, the basic structure of the application along with some features had already been implemented in React Native.
+          For this reason, I directly jumped in the development of the most important features requested by the customer maintaining the structure already in place.
+          After a first month that I used to get familiar with the architecture and workflow, I started developing the first features.
+          <br />
+          Using a MS Excel files, we kept track of all the features that the customer was requesting us and each of us took care of some of them.
+          We opted for the MS Excel solution, instead, for example, of GitHub issues, because we wanted to have something that was easy to share with the final customer and to edit for them.
+          <br />
+          After the first batch of features was ready and shipped to the customer (compiled into Windows binaries), I suggested to improve the GUI 
+          of the product, to polish it and make it more user-friendly. So, after some researches, we opted for Semantic UI because it was easily integrable
+          into React Native, as opposed to, for example, the classic bootstrap that requires JQuery and thus is not really meant to be used with React.
+          <br />
+          Semantic UI allowed us to build a responsive GUI, adapt for display on different devices and screen sizes, and to easily apply themes to improve the look and feel of the interface.
+        </p><p>
+          Finally, after around three month of studying the platform and implementing basic features, I started to take care of bigger issues, such as design and implement brand new functions.
+          By the end of the internship, I implemented a pdf report generator, that collected some basic data from the GUI and from the user to then generate a pdf report 
+          with only the field needed. Additionally, it exported various graphs generated by the app.
+          </p>
         <div class="row">
           <div class="col-md-5">
             <figure class="figure">
