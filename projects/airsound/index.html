@@ -82,6 +82,9 @@
           three proposed challenges; there were almost no constrains on the tools and technologies that could be employed.<br />
           Each team was composed of five members, a tutor from the Italian Air Force, and a mentor from the company.
         </p>
+        <p>We developed a cross-platform application to address the second challenge, the tap testing one, using a KNN classifier to classify the sounds and 
+          kivy, a python-based library to build the Graphical User Interface of the app.
+        </p>
         <h3 class="mb-2">My Roles</h3>
         <p class="lead">
           Designed and implemented the GUI of the application.<br />
@@ -128,18 +131,40 @@
         <p class="lead">At the beginning, I sketched out an interactive prototype of the interface using Axure RP; using the double diamond design technique,
           we iterated together the initial prototype by first adding features and redefining elements until we finally reached a consesus and decided a
           definitive design. 
-          <br /><br /><strong>TODO: ADD IMAGES</strong><br /><br />
         </p>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
+        <h3 class="mb-2">Additional Challenges</h3>
+        <p>
+          To help maintainers and operators efficiently, virtual assistant applications must be easy to use and intuitive; in particular, their interface should not be cluttered by unnecessary elements,
+          and the essential ones need to be clearly visible and easy to find. In addition their function must be clear, to avoid slips and mistakes.
+          <br />For these reasons, we decided to reduce the elements present in the initial prototype to the bare minimum.
+          For example, initially the prototype had a real-time graph of the sound spectrogram; however, just by looking at the spectrogram it is difficult to actually
+          understand if a component is faulty or not. Thus, we decided to remove it from the test screen, and include it only in the final report, for additional checks.
+          Also, we switched from a mobile version of the prototype to a tablet version; tablets, being bigger, are easier to operate especially with gloves, and can be positioned
+          just next to the operators, so that they do not need to hold the device anymore.
+          Finally, we also wanted the app to run as smoothly as possible; since it runs in the background Machine Learning algorithms, and has to update in real-time the user interface,
+          a tablet, like the Microsoft Surface 4 Pro that we used to present, guaranteed us enough perfomance.
+        </p>
+        <p class="mb-5">Below from left to right, are the initial mockup and the improved one, both designed for smartphones.</p>
+        <div class="row mb-5">
+          <div class="col-xs-12 col-md-6 text-center">
             <figure class="figure">
-              <a href="#" data-toggle="lightbox" data-title="The test screen of the initial prototype"><img src="" class="img-fluid" alt="The test screen of the initial prototype"></a>
+              <a href="./img/initial prototype.png" data-toggle="lightbox" data-title="The test screen of the initial prototype"><img src="./img/initial prototype.png" class="img-fluid" alt="The test screen of the initial prototype"></a>
               <figcaption class="figure-caption">The test screen in the initial mockup.</figcaption>
             </figure>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 text-center">
             <figure class="figure">
-              <a href="#" data-toggle="lightbox" data-title="Final version of the test screen"><img src="" class="img-fluid" alt="The final test screen"></a>
+              <a href="./img/prototype.png" data-toggle="lightbox" data-title="Secondo version of the test screen"><img src="./img/prototype.png" class="img-fluid" alt="Second version of test screen"></a>
+              <figcaption class="figure-caption">The second version of test screen.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="mb-5">Below the final version presented at the hackathon finals, showcased on a Microsoft Surface Pro 4.</p>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-xs-12 col-md-10 text-center">
+            <figure class="figure">
+              <a href="./img/final prototype.png" data-toggle="lightbox" data-title="Secondo version of the test screen"><img src="./img/final prototype.png" class="img-fluid" alt="Second version of test screen"></a>
               <figcaption class="figure-caption">The final version of test screen.</figcaption>
             </figure>
           </div>
