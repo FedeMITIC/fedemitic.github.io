@@ -73,7 +73,7 @@ const PROJECTS = [
     btnUrl: '../projects/elisaviihde/index.html',
     tags: ['professional', 'university'],
   },
-  /*{
+  {
     id: Symbol(),
     name: 'Heimdall',
     img: '../projects/heimdall/img/cover.png',
@@ -87,7 +87,7 @@ const PROJECTS = [
     id: Symbol(),
     name: 'Namibia ID Application',
     img: '../projects/namibia-id/img/cover.png',
-    desc: 'An application developed for the User Interface Construction Course in Aalto.',
+    desc: 'An application developed for the UIC Course in Aalto.',
     date: 2018,
     extdesc: '',
     btnUrl: '#',
@@ -95,14 +95,14 @@ const PROJECTS = [
   },
   {
     id: Symbol(),
-    name: 'Nittykumpu Shopping Center',
+    name: 'Nittykumpu kauppakeskus',
     img: '/../projects/niittykumpu/img/cover.png',
     desc: 'Project of the User-Centered Methods Course in Aalto.',
     date: 2018,
     extdesc: '',
     btnUrl: '#',
     tags: ['university'],
-  },*/
+  },
   {
     id: Symbol(),
     name: 'WinAnt',
