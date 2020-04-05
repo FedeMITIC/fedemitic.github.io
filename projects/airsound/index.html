@@ -112,8 +112,18 @@
               Besides, the operator need to properly classify the kind of damage and to fill a precise report, before asking for repairs.
             </li>
           </ol>
-        <p class="lead">
+        <p>
           All the three challenges were interesting, however, we decided to focus on the second one; create an algorithm for the tapping test.
+        </p>
+        <h3 class="mb-2">Additional Context</h3>
+        <p>As mentioned before, the tapping test is a technique to quickly verify if a component is faulty. The test itself is not extremely precise,
+          sometimes it is necessary to perform more advanced tests. Howerver, these tests are longer to execute and are more expensive.
+          On the other hand, the tapping test requires just some seconds to be executed (the actual time depends on the dimension of the surface to test).
+          <br />An app, validated by expert operators, can help juniors and increase their performance. Besides, using this app also a non-expert can perform such a test;
+          indeed I performed a live demo of the tapping test in from of the jury using a rotor blade from an AW139 (a model of helicopter produced by Augusta Westland).
+          The tapping test need to be performed often on vehicles, and not always it is possible to perform it in a silent area; sometimes it is executed on the field or in very noisy
+          hangars. The app, that acquires the sounds from the device microphone, can help also in this scenarios by filtering out external noise.
+          Finally, it can be integrated with the existing systems, to report faulty component direclty from the app and to schedule routine maintenances for the vehicles.
         </p>
       </div>
     </section>
@@ -141,7 +151,7 @@
           understand if a component is faulty or not. Thus, we decided to remove it from the test screen, and include it only in the final report, for additional checks.
           Also, we switched from a mobile version of the prototype to a tablet version; tablets, being bigger, are easier to operate especially with gloves, and can be positioned
           just next to the operators, so that they do not need to hold the device anymore.
-          Finally, we also wanted the app to run as smoothly as possible; since it runs in the background Machine Learning algorithms, and has to update in real-time the user interface,
+          <br />Finally, we also wanted the app to run as smoothly as possible; since it runs in the background Machine Learning algorithms, and has to update in real-time the user interface,
           a tablet, like the Microsoft Surface 4 Pro that we used to present, guaranteed us enough perfomance.
         </p>
         <p class="mb-5">Below from left to right, are the initial mockup and the improved one, both designed for smartphones.</p>
@@ -154,7 +164,7 @@
           </div>
           <div class="col-xs-12 col-md-6 text-center">
             <figure class="figure">
-              <a href="./img/prototype.png" data-toggle="lightbox" data-title="Secondo version of the test screen"><img src="./img/prototype.png" class="img-fluid" alt="Second version of test screen"></a>
+              <a href="./img/prototype.png" data-toggle="lightbox" data-title="Second version of the test screen"><img src="./img/prototype.png" class="img-fluid" alt="Second version of test screen"></a>
               <figcaption class="figure-caption">The second version of test screen.</figcaption>
             </figure>
           </div>
@@ -164,11 +174,23 @@
           <div class="col-md-1"></div>
           <div class="col-xs-12 col-md-10 text-center">
             <figure class="figure">
-              <a href="./img/final prototype.png" data-toggle="lightbox" data-title="Secondo version of the test screen"><img src="./img/final prototype.png" class="img-fluid" alt="Second version of test screen"></a>
+              <a href="./img/final prototype.png" data-toggle="lightbox" data-title="Second version of the test screen"><img src="./img/final prototype.png" class="img-fluid" alt="Second version of test screen"></a>
               <figcaption class="figure-caption">The final version of test screen.</figcaption>
             </figure>
           </div>
         </div>
+        <p>Taking into account the main and the additional challenges described before, we developed this interface that comprises:</p>
+        <ul>
+          <li>Brief recap of the vehicle and the component being tested.</li>
+          <li>Semaphore: Synthetic test status indicator (yellow = waiting for input, red = faulty component, green = component OK).</li>
+          <li>Gauge: Detailed test indicator (indicates how good or faulty a component is).</li>
+          <li>Cancel button: goes back to the previous screen and cancel the test.</li>
+          <li>Start button: starts the test (activates the ML algorithms in background).</li>
+          <li>Damage photo: for each faulty component the operator has to take a picture of it that will be included in the report.</li>
+          <li>End test button: terminates the test once all the component were tested.</li>
+        </ul>
+        <p>We removed the confidence indicator because it was difficult to read from the distance and did not add much value to the test screen itself.</p>
+        <p>Buttons are bigger than the ones in the mock-up, and easy to reach if holding the tablet with only one hand.</p>
       </div>
     </section>
 
@@ -179,6 +201,16 @@
           There, we were able to complete and refine the application and got it ready for the final presentations.
           In the end, we won the second prize and an acknowledgement for the best teamwork.
         </p>
+        <p>The finalized app do not need an internet connection since all the algorithms are executed directly on the device (edge computing).
+          Howerver, if an internet connection is available and the video of the test can be captured, it is possible to leverage the power of the cloud computing
+          and perform more advanced analysis. In particular, we developed an algorithm that analyzes the video, recognize the position of the tapping hammer, and
+          colors it in red if the component is faulty in that exact point, green otherwise.
+          <br />The Figure below shows the advanced analysis results obtained with this algorithm.
+        </p>
+        <figure class="figure">
+          <a href="./img/advanced.png" data-toggle="lightbox" data-title="Advanced analysis for the tapping test"><img src="./img/advanced.png" class="img-fluid" alt="Advanced analysis for the tapping test"></a>
+          <figcaption class="figure-caption">Frame extracted from the analysed video track; the colors represent where the hammer hit the surface and the classification of the sound.</figcaption>
+        </figure>
       </div>
     </section>
 
