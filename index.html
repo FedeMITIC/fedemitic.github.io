@@ -37,6 +37,9 @@
     gtag('js', new Date());
     gtag('config', 'UA-56293560-10');
   </script>
+
+  <!-- Lazyload -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
@@ -45,7 +48,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Scroll to top">
       <span class="d-block d-lg-none">Federico Macchi</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 lazyload" data-src="img/profile.png" alt="Profile picture">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -93,8 +96,7 @@
         </div>
         <p class="lead mb-4">
           Currently completing a (Double) M.Sc. in Human-computer Interaction and Design at the University of Trento,
-          Italy, I'm
-          passionate about technologies and sciences. I love writing code but I also have a creative side.
+          Italy, I'm passionate about technologies and sciences. I love writing code but I also have a creative side.
           <br />
           I like to get my hands dirty building and testing devices of any sort; I have a team-oriented mentality and
           like to co-operate with others sharing ideas, insights, and knowledge.
@@ -103,21 +105,30 @@
         <div class="row mb-3">
           <div class="col-md-4">
             <figure class="figure">
-              <a href="./img/IMG_20191117_110055.jpg" data-toggle="lightbox" data-title="Self-driving car prototype"><img width="400" height="225" src="./img/IMG_20191117_110055.jpg" class="img-fluid" alt="Self-driving car prototype"></a>
-              <figcaption class="figure-caption">Prototype of a self-driving car, built during the Innovathon hackathon.</figcaption>
+              <picture>
+                <source media="(min-width: 1000px)" srcset="./img/Innovathon_car400-225.webp">
+                <a href="./img/Innovathon_car400-225.webp" data-toggle="lightbox" data-title="Self-driving car prototype"><img width="400" height="225" data-src="./img/Innovathon_car400-225.webp" class="img-fluid rounded lazyload" alt="Self-driving car prototype"></a>
+                <figcaption class="figure-caption">Prototype of a self-driving car, built during the Innovathon hackathon.</figcaption>
+              </picture>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="figure">
-              <a href="./img/AIRTificialIntelligence.png" data-toggle="lightbox" data-title="Team Avanti - AIRTificial Intelligence"><img width="400" height="225" src="./img/AIRTificialIntelligence.png" class="img-fluid" alt="Team Avanti - AIRTificial Intelligence"></a>
-              <figcaption class="figure-caption">My Team "Avanti" (named after the airplane P-180 by Piaggio) at the AIRTificial Intelligence hackathon.</figcaption>
-            </figure>            
+              <picture>
+                <source media="(min-width: 1000px)" srcset="./img/AIRTificialIntelligence400-225.webp">
+                <a href="./img/AIRTificialIntelligence400-225.webp" data-toggle="lightbox" data-title="Team Avanti - AIRTificial Intelligence"><img width="400" height="225" data-src="./img/AIRTificialIntelligence400-225.webp" class="img-fluid rounded lazyload" alt="Team Avanti - AIRTificial Intelligence"></a>
+                <figcaption class="figure-caption">My Team "Avanti" (named after the airplane P-180 by Piaggio) at the AIRTificial Intelligence hackathon.</figcaption>
+              </picture>
+            </figure>
           </div>
           <div class="col-md-4">
-            <figure class="figure">
-              <a href="./img/rotor.png" data-toggle="lightbox" data-title="Rotor blade"><img width="400" height="225" src="./img/rotor.png" class="img-fluid" alt="Rotor blade"></a>
-              <figcaption class="figure-caption">Me, playing with a tail rotor blade of an AW139 by AgustaWestland.</figcaption>
-            </figure>     
+              <figure class="figure">
+                <picture>
+                  <source media="(min-width: 1000px)" srcset="./img/rotor400-225.webp">
+                  <a href="./img/rotor400-225.webp" data-toggle="lightbox" data-title="Rotor blade"><img width="400" height="225" data-src="./img/rotor400-225.webp" class="img-fluid rounded lazyload" alt="Rotor blade"></a>
+                  <figcaption class="figure-caption">Me, playing with a tail rotor blade of an AW139 by AgustaWestland.</figcaption>
+                </picture>
+              </figure>  
           </div>
         </div>
 
