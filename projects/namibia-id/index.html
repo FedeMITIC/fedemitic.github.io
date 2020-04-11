@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Federico Macchi | Namibia ID</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../..//favicon-16x16.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/resume.min.css" rel="stylesheet">
+  <link href="../../css/custom.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-56293560-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-56293560-10');
+  </script>
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <h2 class="mb-0 text-white">NAMIBIA ID</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#challenge">Challenge</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#approach">Approach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#techniques">Techniques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#results">Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../portfolio.html">Back to portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="intro">
+      <div class="w-100">
+        <h1 class="mb-0">NAMIBIA ID</h1>
+        <div class="subheading mb-5">Applying for a government ID in Namibia; the easy way.</div>
+        <p class="lead mb-5">As a project for the User Interface Construction course (CS-E5220) in Aalto University <a href="https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1125650833&haettuOpas=-1" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-link"></i></a>, we were developing a solution that would digitalize the process of applying for a government ID in Namibia.</p>
+        <h3 class="mb-2">My Roles</h3>
+        <p class="lead">
+          Research and discover the application phases to complete the procedure of applying for an id.<br />
+          Create a Command Line Interface app, to allow the users to apply for an id.<br />
+          Create part of the Graphical User Interface app, for the same purpose as above.<br />
+          Report the procedures and techniques applied.<br />
+        </p>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-item-center" id="challenge">
+      <div class="w-100">
+        <h2 class="mb-5">Challenge</h2>
+        <p class="lead mb-5">The main purpose of the course and of the project was to digitalize the process of applying for a government ID in Namibia.
+          After the research phase, that every group member conducted independently, we discovered that the process involved visiting some government offices multiple times, 
+          other than filling in various documents.
+          Thus, we decided to try to optimize the process itself, by reducing the number of unnecessary trips and thus the time needed to complete the procedure.
+        </p>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-item-center" id="approach">
+      <div class="w-100">
+        <h2 class="mb-5">Approach</h2>
+        <h3 class="mb-2">Individual part</h3>
+        <p class="lead">Initially, every member of the group was tasked to create an application with a basic command line interface;
+          the objective was to study the flow of the process and begin the digitalization process.<br />
+          The process I decided to digitalize was the one to report the birth or the death of a family member.</p>
+          <p>
+          Using NodeJS, the commander, and the inquirer packages I created an interactive command line interface, with colors, detailed help, and checkboxes that 
+          guides step by step the users in the procedure; this simplified mode is meant for inexperienced users, that prefer to be
+          guided throughout the whole process and receive more feedback along the way.
+          Alternatively, for more advanced users, it is possible to input in the command line a single-line command, like in the traditional ones, 
+          to complete the entire process; in this case, there is just a final confirmation that the process is terminated.
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/help screen-final.png" data-toggle="lightbox" data-title="Help screen"><img src="./img/help screen-final.png" class="img-fluid" alt="Help screen"></a>
+              <figcaption class="figure-caption">The help screen of the CLI App.</figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/Initial status-final.png" data-toggle="lightbox" data-title="The initial status of the CLI."><img src="./img/Initial status-final.png" class="img-fluid" alt="The initial status of the CLI."></a>
+              <figcaption class="figure-caption">The initial status of the CLI.</figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/power-user-mode.png" data-toggle="lightbox" data-title="Power user mode"><img src="./img/power-user-mode.png" class="img-fluid" alt="Power user mode"></a>
+              <figcaption class="figure-caption">The feedback received using the expert mode.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p>
+          Besides the CLI application, I also created a prototype for smartphones; the prototype, built with Mockplus <a href="https://www.mockplus.com/" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-link"></i></a> had the same features of the CLI interface.
+          As the CLI, the prototype exposed two modes of operation; a guided one, this time with buttons and text-boxes and a power user one that had one 
+          single text box to insert the whole command.
+        </p>
+        <div class="row text-center">
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/log-in page.png" data-toggle="lightbox" data-title="Login page"><img src="./img/log-in page.png" class="img-fluid" alt="Login page"></a>
+              <figcaption class="figure-caption">The log in screen of the prototype.</figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/birth-welcome-screen.png" data-toggle="lightbox" data-title="Announce birth: initial screen"><img src="./img/birth-welcome-screen.png" class="img-fluid" alt="Announce birth: initial screen"></a>
+              <figcaption class="figure-caption">Announce birth: initial screen.</figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <figure class="figure">
+              <a href="./img/cli-mode.png" data-toggle="lightbox" data-title="Power user mode"><img src="./img/cli-mode.png" class="img-fluid" alt="Power user mode"></a>
+              <figcaption class="figure-caption">Power user mode welcome screen.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p><a href="./documents/Report.pdf">The individual report</a> I wrote contains additional details about the features, the design decisions, and the guidelines applied.</p>
+        <h3 class="mb-2">Team part</h3>
+        <p>Later in the course, I teamed up with my two classmates <a href="https://vojtasaf.github.io/" target="_blank"
+        rel="noopener noreferrer">Vojta</a> and <a href="https://www.mariolopezbatres.com/index.html/#/" target="_blank"
+        rel="noopener noreferrer">Mario</a> to prototype and build a more detailed application, this time with a Graphical User Interface.
+        Since Mario and Vojta both chose as the topic for the initial app the application for a government ID, we decided to keep that as the 
+        topic for the rest of the projects.<br />
+        Thus, we developed <a href="https://uic-project-aalto.firebaseapp.com/" target="_blank"
+        rel="noopener noreferrer">a web application</a> using Angular and Firebase; the application was developed only for smartphones,
+        so if you are on desktop, I suggest to toggle on the device mode. (on Google Chrome press the <code>F12</code> key, then click on <code>Toggle device toolbar</code>)
+        <br />Additional details regarding the technologies, guidelines, and design decisions are in the <a href="./documents/Group report.pdf">group report</a>.
+      </p>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-item-center" id="techniques">
+      <div class="w-100">
+        <h2 class="mb-5">Techniques</h2>
+        <p class="lead mb-5">We focused on applying most of the guidelines available for User Interfaces, such as:</p>
+        <ul>
+          <li>Nielsen’s 10 Usability Heuristics.</li>
+          <li>Schneiderman’s 8 Golden Rules.</li>
+          <li>Smith & Mosier.</li>
+          <li>W.C.A.G. 2.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-item-center" id="results">
+      <div class="w-100">
+        <h2 class="mb-5">Results</h2>
+        <p class="lead">By the end of the course, we built <a href="https://uic-project-aalto.firebaseapp.com/" target="_blank"
+          rel="noopener noreferrer">a functioning web app</a>* that digitalizes and optimizes the application process for an ID;
+          besides, it applies the guidelines studied in the course and other ones as well.
+          <br />* As mentioned before, I suggest to turn on the device mode if you are on desktop.
+        </p>
+        <p>Below there are some screenshots (not in high definition unfortunately) of the web app.</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <figure class="figure text-center">
+              <a href="./img/screenshots.jpg" data-toggle="lightbox" data-title="Screens"><img src="./img/screenshots.jpg" class="img-fluid" alt="Screens"></a>
+              <figcaption class="figure-caption">Screens of the web application.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-1" style="background-color: #666">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-white py-3">&copy; 2019 Federico Macchi | <a href="https://startbootstrap.com/themes/resume">Original
+        template</a>.</div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../js/resume.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      })
+    </script>
+
+</body>
+
+</html>
