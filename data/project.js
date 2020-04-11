@@ -90,7 +90,7 @@ const PROJECTS = [
     desc: 'An application developed for the UIC Course in Aalto.',
     date: 2018,
     extdesc: '',
-    btnUrl: '#',
+    btnUrl: '../projects/namibia-id/index.html',
     tags: ['university'],
   },
   {
