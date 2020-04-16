@@ -14,6 +14,16 @@
 const PROJECTS = [
   {
     id: Symbol(),
+    name: 'Roar Bikes',
+    img: '../projects/roar-bikes/img/cover.png',
+    desc: 'Interactive prototype for a fictional bike shop, built with Adobe XD',
+    date: 2020,
+    extdesc: '',
+    btnUrl: '../projects/roar-bikes/index.html',
+    tags: ['personal']
+  },
+  {
+    id: Symbol(),
     name: 'Portfolio',
     img: '../projects/portfolio/img/cover.png',
     desc: 'Résumé and portfolio template, developed with Bootstrap and vanilla JS.',
