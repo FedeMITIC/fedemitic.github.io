@@ -14,6 +14,16 @@
 const PROJECTS = [
   {
     id: Symbol(),
+    name: 'Space Shooter',
+    img: '../projects/space-shooter/img/cover.png',
+    desc: 'Simple 2D game, built with Unity for a Udemy Course.',
+    date: 2020,
+    extdesc: '',
+    btnUrl: '../projects/space-shooter/index.html',
+    tags: ['personal']
+  },
+  {
+    id: Symbol(),
     name: 'Roar Bikes',
     img: '../projects/roar-bikes/img/cover.png',
     desc: 'Interactive prototype for a fictional bike shop, built with Adobe XD',
