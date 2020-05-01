@@ -8,18 +8,18 @@
  * date: date (full year)
  * extdesc :string - extended description for the project page (might contain html tags)
  * date :string
- * tags :array - available labels: personal, professional, university. Multiple lables may be present (alphabetically ordered)
+ * tags :array - available labels: personal, professional, university. Multiple labels may be present (alphabetically ordered)
  *
  */
 const PROJECTS = [
   {
     id: Symbol(),
-    name: 'Space Shooter',
-    img: '../projects/space-shooter/img/cover.png',
-    desc: 'Simple 2D game, built with Unity for a Udemy Course.',
+    name: 'Unity Games',
+    img: '../projects/unity-games/img/cover.png',
+    desc: 'Simple games built with Unity3D for a Udemy Course.',
     date: 2020,
     extdesc: '',
-    btnUrl: '../projects/space-shooter/index.html',
+    btnUrl: '../projects/unity-games/index.html',
     tags: ['personal']
   },
   {
