@@ -28,11 +28,11 @@ a {
 }
 
 .color-section {
-    background: #FFE998;
+    background: #ECEFF1;
 }
 
 .color-section a, .color-section .text-primary {
-    color: #ae4016 !important;
+    color: #a23e17 !important;
 }
 
 .color-section .table td, .color-section .table th {
