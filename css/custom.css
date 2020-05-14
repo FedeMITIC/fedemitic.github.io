@@ -16,13 +16,34 @@ ul, ol, body {
 }
 
 a {
-    color: #c35328;
+    color: #C35328;
 }
 
 .text-primary {
-    color: #c35328 !important;
+    color: #C35328 !important;
 }
 
 .bg-primary {
-    background-color: #c35328 !important;
+    background-color: #C35328 !important;
+}
+
+.color-section {
+    background: #FFE998;
+}
+
+.color-section a, .color-section .text-primary {
+    color: #ae4016 !important;
+}
+
+.color-section .table td, .color-section .table th {
+    border-top-color: #343A40;
+}
+
+.color-section .table thead th {
+    border-bottom-color: #343A40;
+    border-top-color: #FFE998;
+}
+
+.color-section table > tbody > tr:last-child {
+    border-bottom: 1px solid #343A40;
 }
