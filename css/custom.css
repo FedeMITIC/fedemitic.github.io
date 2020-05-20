@@ -31,7 +31,7 @@ a {
     background: #ECEFF1;
 }
 
-.color-section a, .color-section .text-primary {
+.color-section a, .color-section .text-primary, .color-section .text-warning, .color-section .text-danger {
     color: #a23e17 !important;
 }
 
@@ -41,7 +41,7 @@ a {
 
 .color-section .table thead th {
     border-bottom-color: #343A40;
-    border-top-color: #FFE998;
+    border-top-color: #ECEFF1;
 }
 
 .color-section table > tbody > tr:last-child {
